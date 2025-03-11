@@ -6,9 +6,6 @@
   display: flex;
   justify-content: space-between;
   margin: 0 -15px;
-  @media (max-width: 450px) {
-    flex-wrap: wrap;
-  }
 }
 .testimonials-card {
   width: 270px;

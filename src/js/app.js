@@ -1,7 +1,7 @@
-function toggleMenu() {
-    const menu = document.querySelector('.nav-list-header');
-    menu.classList.toggle('active'); // Добавляем/удаляем класс "active"
-}
+// function toggleMenu() {
+//     const menu = document.querySelector('.nav-list-header');
+//     menu.classList.toggle('active'); // Добавляем/удаляем класс "active"
+// }
 
 new Swiper('.swiper',{
     navigation: {
@@ -23,4 +23,10 @@ new Swiper('.swiper',{
     loop:true,
     effect:'fade',
 
+});
+$(function() {
+    $('.header__burger').on('click', function() {
+        $('.header__burger, .nav-list-header').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
 });
